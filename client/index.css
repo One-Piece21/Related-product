@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fav-icon {
+    position: absolute;
+    color: aqua;
+    left: 10rem;
+    top:8px
+}
+.card-related {
+    position: relative;
+}
