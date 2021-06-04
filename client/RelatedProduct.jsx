@@ -45,6 +45,7 @@ export default class RelatedProduct extends React.Component {
     let { start, end } = this.state;
     var id = window.location.href.split("/")[3];
     let data = await api(id);
+    console.log(data);
     data.forEach(async (element, index)=> {
       let response = await axios
       .get(`http://localhost:3002/rating/${element.id}`)
@@ -96,7 +97,7 @@ export default class RelatedProduct extends React.Component {
             <ReactStars />
           </div>
         </div>
-      </div>
+      </div> 
     );
   }
 }

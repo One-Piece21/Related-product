@@ -8,7 +8,7 @@ const axios = require('axios');
 const instance = axios.create({
   baseURL: 'https://app-hrsei-api.herokuapp.com/api/fec2/hrnyc',
   headers: {
-    'Authorization':  `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`
+    'Authorization':  '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'
   }
 });
 async function getRelatedProducts(id) {
@@ -35,7 +35,7 @@ app.get("/rating/:id", async (req,res)=>{
 try{
 
   axios.get(`https://app-hrsei-api.herokuapp.com/api/fec2/hrnyc/reviews/meta?product_id=${req.params.id}`,{headers: {
-    'Authorization':  `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`
+    'Authorization':  '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'
   }
 })
   .then((response)=>{
@@ -55,7 +55,7 @@ app.get("/image/:id", async (req,res)=>{
   try{
 
     axios.get(`https://app-hrsei-api.herokuapp.com/api/fec2/hrnyc/products/${req.params.id}/styles`,{headers: {
-      'Authorization': `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`
+      'Authorization': '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'
     }
   })
     .then((response)=>
