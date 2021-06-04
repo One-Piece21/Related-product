@@ -48,7 +48,7 @@ export default class RelatedProduct extends React.Component {
     console.log(data);
     data.forEach(async (element, index)=> {
       let response = await axios
-      .get(`http://localhost:3002/rating/${element.id}`)
+      .get(`/rating/${element.id}`)
         let ratings = response.data.ratings;
         let som = 0;
         let somval = 0;
